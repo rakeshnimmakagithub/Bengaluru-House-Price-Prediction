@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #8e2de2, #4a00e0);
+}
+
+.container {
+    background: #ffffff;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    overflow: hidden;
+    width: 400px;
+    position: relative;
+}
+
+header {
+    background: #4a00e0;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.form-container {
+    padding: 20px;
+}
+
+h2 {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.input-field {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.switch-field {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.switch-field input {
+    display: none;
+}
+
+.switch-field label {
+    background-color: #e4e4e4;
+    color: #555;
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.switch-field input:checked + label {
+    background-color: #8e2de2;
+    color: white;
+    border-color: #8e2de2;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 4px;
+    background: #4a00e0;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.submit-btn:hover {
+    background: #3700b3;
+}
+
+.result {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.result h2 {
+    margin: 0;
+    font-size: 24px;
+    color: #333;
+}
+
+.currency-notes {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url('currency-notes.png');
+    background-size: cover;
+    z-index: 100;
+    pointer-events: none;
+}
+
+.house-background {
+    background-image: url('beautiful-house.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.bathroom-background {
+    background-image: url('beautiful-bathroom.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
